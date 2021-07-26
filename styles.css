@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding:0;
+    margin:0;
+    box-sizing: 0;
+}
+body {
+    background:rgb(43, 33, 33);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;   
+    position:relative;
+}
+.subcontainer {
+   display:flex;   
+   justify-content: center;
+   align-items: center;
+   position:relative;
+   padding:5%;
+   height: auto;
+}
+.textboxMain {
+    font-family: 'Poppins', sans-serif;
+    position:absolute;
+    top:-63.5px;
+    border:1px solid rgba(228, 218, 218, 0.63);
+    outline:none;
+    width:27.5%;
+    font-size:24px;
+    font-weight:bold;
+    padding:12px;
+    margin-left:1.5%;
+    cursor:not-allowed;
+    text-align: right;
+}
+.textboxBelow {
+    font-family: 'Poppins', sans-serif;
+    position:absolute;
+    top:0;
+    border:1px solid rgba(228, 218, 218, 0.63);
+    outline:none;
+    width:27.5%;
+    font-size:24px;
+    font-weight:bold;
+    padding:12px;
+    margin-left:1.5%;
+    cursor:not-allowed;
+    text-align: right;
+}
+.numbers {
+    width:25%;
+    text-align: center;
+}
+.numbers button {
+    font-family: 'Poppins', sans-serif;
+    padding:20px;
+    width:70px;
+    text-align: center;
+    font-weight:bold;
+    font-size:20px;
+    border:1px solid rgb(53, 50, 50);
+    color:white;
+    background:rgb(37, 36, 36);
+    cursor:pointer;
+    transition:0.4s;
+}
+.numbers button:hover {
+    background:white;
+    color:black;
+}
+.operations {
+    display:flex;
+    flex-direction: column;
+    width:auto;
+    text-align: center;
+}
+.operations button {
+    font-family: 'Poppins', sans-serif;
+    padding:20px;
+    width:100px;
+    text-align: center;
+    font-weight:bold;
+    font-size:20px;
+    border:1px solid rgb(53, 50, 50);
+    color:white;
+    background:#5E4BB6;
+    cursor:pointer;
+    transition:0.4s;
+}
+.operations button:hover {
+    background:white;
+    color:black;
+}
+.equal {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    position:absolute;
+    padding:20px;
+    width:29.5%;
+    margin-left:1.3%;
+    background:rgba(235, 194, 16, 0.986);
+    font-size:20px;
+    font-weight:bold;
+    border:none;
+    color:white;
+    cursor:pointer;
+    bottom:-10px;
+    transition:0.4s;
+}
+.equal:hover {
+    background: white;
+    color:black;
+}
+/* footer */
+footer {
+    background:white;
+    text-align:center;
+    padding:10px;
+    bottom:0;
+}
