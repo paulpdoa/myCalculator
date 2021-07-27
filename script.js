@@ -5,6 +5,9 @@ const equal = document.querySelector('.equal');
 
 let operationPressed = '';
 
+let present;
+let next;
+
 // textboxes
 const textboxMain = document.querySelector('.textboxMain');
 const textboxBelow = document.querySelector('.textboxBelow');
@@ -17,20 +20,24 @@ numbers.forEach((number) => {
 })
 operations.forEach((operation) => {
     operation.addEventListener('click', () => {
-       
         operationPressed = operation.value;
+
         textboxBelow.value += textboxMain.value;
+        present = textboxBelow.value;
         textboxMain.value = '';
+        console.log(present);
         
     })
 })
 equal.addEventListener('click', () => {
 
     if(operationPressed === '+') {
-        let addResult = +textboxBelow.value + +textboxMain.value;
+        let addResult = +present + +textboxMain.value;
 
         textboxMain.value = '';
-        textboxBelow.value = addResult;
+        textboxMain.value = addResult;
+       
+        
     } else if(operationPressed === '-') {
         let subtractResult = +textboxBelow.value - +textboxMain.value;
         
@@ -47,12 +54,4 @@ equal.addEventListener('click', () => {
         textboxMain.value = '';
         textboxBelow.value = divideResult;   
     }
-
-    // const result = +textboxBelow.value + +textboxMain.value;
-    // textboxMain.value = '';
-    // textboxBelow.value = result;
-
 })
-// function for adding number
-   
-console.log(operationPressed);
